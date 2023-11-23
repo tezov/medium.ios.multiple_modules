@@ -1,4 +1,4 @@
-# Xcode's Hidden Power Unleashed — Multi-Module Domination Strategy!
+# Xcode's Hidden Power Unleashed — Multi-Module Domination!
 
 This repository is a support for a medium story
 
