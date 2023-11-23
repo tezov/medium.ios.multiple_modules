@@ -10,6 +10,7 @@
 		276D068379A7D817262C59C5 /* Pods_module_feature_a.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A785180597C62EFDB9A3DA /* Pods_module_feature_a.framework */; };
 		C77919592B0D6CFD00D69DF3 /* module_root.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C77919582B0D6CFD00D69DF3 /* module_root.framework */; };
 		C7A799272B0C16AE00BF1F70 /* DummyFromFeatureA.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A799262B0C16AE00BF1F70 /* DummyFromFeatureA.swift */; };
+		C7BF0CA42B0FAA1400EB18FA /* build.pod.rb in Resources */ = {isa = PBXBuildFile; fileRef = C7BF0CA32B0FAA1400EB18FA /* build.pod.rb */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +19,7 @@
 		C77919582B0D6CFD00D69DF3 /* module_root.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = module_root.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7A799152B0C166400BF1F70 /* module_feature_a.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = module_feature_a.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7A799262B0C16AE00BF1F70 /* DummyFromFeatureA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyFromFeatureA.swift; sourceTree = "<group>"; };
+		C7BF0CA32B0FAA1400EB18FA /* build.pod.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = build.pod.rb; sourceTree = "<group>"; };
 		FFA4D592529E99165333EF9A /* Pods-module_feature_a.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-module_feature_a.debug.xcconfig"; path = "Target Support Files/Pods-module_feature_a/Pods-module_feature_a.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,6 +58,7 @@
 		C7A7990B2B0C166400BF1F70 = {
 			isa = PBXGroup;
 			children = (
+				C7BF0CA32B0FAA1400EB18FA /* build.pod.rb */,
 				C7A799172B0C166400BF1F70 /* module_feature_a */,
 				C7A799162B0C166400BF1F70 /* Products */,
 				1E84CE63314769C9C21980CE /* Pods */,
@@ -149,6 +152,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7BF0CA42B0FAA1400EB18FA /* build.pod.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		471F7D609282A10885053F9D /* Pods_module_root.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C942FDB0B1EEF7B2779448A3 /* Pods_module_root.framework */; };
 		C7A799042B0C12F200BF1F70 /* DummyFromRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A799032B0C12F200BF1F70 /* DummyFromRoot.swift */; };
+		C7BF0CA02B0F943F00EB18FA /* build.pod.rb in Resources */ = {isa = PBXBuildFile; fileRef = C7BF0C9F2B0F943F00EB18FA /* build.pod.rb */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0A30E644B7DCDA7AEF50E709 /* Pods-module_root.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-module_root.debug.xcconfig"; path = "Target Support Files/Pods-module_root/Pods-module_root.debug.xcconfig"; sourceTree = "<group>"; };
 		C7A798E62B0C0FD300BF1F70 /* module_root.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = module_root.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7A799032B0C12F200BF1F70 /* DummyFromRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyFromRoot.swift; sourceTree = "<group>"; };
+		C7BF0C9F2B0F943F00EB18FA /* build.pod.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = build.pod.rb; sourceTree = "<group>"; };
 		C942FDB0B1EEF7B2779448A3 /* Pods_module_root.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_module_root.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE0F048AEF7BE6575B0B9198 /* Pods-module_root.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-module_root.release.xcconfig"; path = "Target Support Files/Pods-module_root/Pods-module_root.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -34,6 +36,7 @@
 		C7A798DC2B0C0FD300BF1F70 = {
 			isa = PBXGroup;
 			children = (
+				C7BF0C9F2B0F943F00EB18FA /* build.pod.rb */,
 				C7A798E82B0C0FD300BF1F70 /* module_root */,
 				C7A798E72B0C0FD300BF1F70 /* Products */,
 				F65115A9A15CC7380E0F068D /* Pods */,
@@ -145,6 +148,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7BF0CA02B0F943F00EB18FA /* build.pod.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

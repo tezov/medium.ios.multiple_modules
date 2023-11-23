@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C7A4C69E2B0F85D800489703 /* dependencies.rb in Resources */ = {isa = PBXBuildFile; fileRef = C7A4C69D2B0F85D800489703 /* dependencies.rb */; };
 		C7A798CF2B0C0FBD00BF1F70 /* applicationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A798CE2B0C0FBD00BF1F70 /* applicationApp.swift */; };
 		C7A798D12B0C0FBD00BF1F70 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A798D02B0C0FBD00BF1F70 /* ContentView.swift */; };
 		C7A798D32B0C0FBE00BF1F70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7A798D22B0C0FBE00BF1F70 /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		B6291EEAE7D0F76FB9576F4B /* Pods_application.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_application.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAF86AA720E93D87299FE800 /* Pods-application.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-application.debug.xcconfig"; path = "Target Support Files/Pods-application/Pods-application.debug.xcconfig"; sourceTree = "<group>"; };
+		C7A4C69D2B0F85D800489703 /* dependencies.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = dependencies.rb; sourceTree = "<group>"; };
 		C7A798CB2B0C0FBD00BF1F70 /* application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = application.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7A798CE2B0C0FBD00BF1F70 /* applicationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = applicationApp.swift; sourceTree = "<group>"; };
 		C7A798D02B0C0FBD00BF1F70 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 		C7A798C22B0C0FBD00BF1F70 = {
 			isa = PBXGroup;
 			children = (
+				C7A4C69D2B0F85D800489703 /* dependencies.rb */,
 				C7A798CD2B0C0FBD00BF1F70 /* application */,
 				C7A798CC2B0C0FBD00BF1F70 /* Products */,
 				1048F82D08FEEB815611FF1A /* Pods */,
@@ -136,6 +139,7 @@
 				C7A798C82B0C0FBD00BF1F70 /* Frameworks */,
 				C7A798C92B0C0FBD00BF1F70 /* Resources */,
 				C7A799082B0C15C700BF1F70 /* Embed Frameworks */,
+				F5C83EF7B23CA85A2A127EE4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -186,6 +190,7 @@
 			files = (
 				C7A798D62B0C0FBE00BF1F70 /* Preview Assets.xcassets in Resources */,
 				C7A798D32B0C0FBE00BF1F70 /* Assets.xcassets in Resources */,
+				C7A4C69E2B0F85D800489703 /* dependencies.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +217,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5C83EF7B23CA85A2A127EE4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-application/Pods-application-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-application/Pods-application-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-application/Pods-application-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

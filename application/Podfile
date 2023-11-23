@@ -1,39 +1,24 @@
 workspace './application.xcworkspace'
 platform :ios, '14.0'
 
-#Dependencies
-def pod_swiftdate
-  pod 'SwiftDate', :git=> 'https://github.com/malcommac/SwiftDate.git', :tag => '7.0.0'
-end
+load "./dependencies.rb"
+
+#Target modules
+modulesDependencies = Set.new
+modulesDependencies.merge(addTarget(self, "../module_root"))
+modulesDependencies.merge(addTarget(self, "../module_feature_a"))
+modulesDependencies.merge(addTarget(self, "../module_feature_b"))
 
 #Target configuration
+puts "** Add target application"
 target 'application' do
   project './application.xcodeproj'
   use_frameworks!
   
-#  pod_swiftdate
+  puts "+ herited from modules"
+  modulesDependencies.each do |dependency|
+    puts "- #{dependency}"
+    library(self, dependency)
+  end
   
-end
-
-
-target 'module_root' do
-  project '../module_root/module_root.xcodeproj'
-  use_frameworks!
-  
-  pod_swiftdate
-
-end
-
-
-target 'module_feature_a' do
-  project '../module_feature_a/module_feature_a.xcodeproj'
-  use_frameworks!
-
-end
-
-
-target 'module_feature_b' do
-  project '../module_feature_b/module_feature_b.xcodeproj'
-  use_frameworks!
-
 end
