@@ -1,14 +1,16 @@
 import SwiftUI
+import module_root
 import module_feature_a
 import module_feature_b
-import module_root
+
 
 struct ContentView: View {
     var body: some View {
         VStack {
-            Text("\(FROM_FEATURE_A)")
-            Text("\(FROM_FEATURE_B)")
-            //Text(FROM_ROOT_DATE?.toString() ?? "wring date")
+            Text("\(FEATURE_A_STRING)")
+            Text("\(FEATURE_B_STRING)")
+            Text(ROOT_DATE?.toString() ?? "wrong date")
+            Text(FEATURE_B_DATE?.toString() ?? "wrong date")
         }
         .padding()
     }

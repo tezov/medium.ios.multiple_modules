@@ -1,3 +1,22 @@
-PODFILE CHECKSUM: e365ca92be7d7e25d6d39d8ceb72a77491f303d6
+PODS:
+  - SwiftDate (7.0.0)
+
+DEPENDENCIES:
+  - SwiftDate (from `https://github.com/malcommac/SwiftDate.git`, tag `7.0.0`)
+
+EXTERNAL SOURCES:
+  SwiftDate:
+    :git: https://github.com/malcommac/SwiftDate.git
+    :tag: 7.0.0
+
+CHECKOUT OPTIONS:
+  SwiftDate:
+    :git: https://github.com/malcommac/SwiftDate.git
+    :tag: 7.0.0
+
+SPEC CHECKSUMS:
+  SwiftDate: bbc26e26fc8c0c33fbee8c140c5e8a68293a148a
+
+PODFILE CHECKSUM: b12e17a5907bcce13f73c03e4f7ce7d0f17be4c5
 
 COCOAPODS: 1.14.2

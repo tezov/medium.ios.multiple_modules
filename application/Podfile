@@ -1,8 +1,8 @@
-workspace './appplication.xcworkspace'
+workspace './application.xcworkspace'
 platform :ios, '14.0'
 
 #Dependencies
-def pods_SwiftDate
+def pod_swiftdate
   pod 'SwiftDate', :git=> 'https://github.com/malcommac/SwiftDate.git', :tag => '7.0.0'
 end
 
@@ -11,34 +11,29 @@ target 'application' do
   project './application.xcodeproj'
   use_frameworks!
   
-#  pods_SwiftDate
+#  pod_swiftdate
   
 end
+
 
 target 'module_root' do
   project '../module_root/module_root.xcodeproj'
-  use_frameworks! #:linkage => :static
+  use_frameworks!
   
-#  pods_SwiftDate
-  
-  
+  pod_swiftdate
+
 end
+
 
 target 'module_feature_a' do
   project '../module_feature_a/module_feature_a.xcodeproj'
-  use_frameworks! #:linkage => :static
-  
+  use_frameworks!
 
-  
-  
 end
 
 
 target 'module_feature_b' do
   project '../module_feature_b/module_feature_b.xcodeproj'
-  use_frameworks! #:linkage => :static
-  
-#  pods_SwiftDate
-  
-  
+  use_frameworks!
+
 end

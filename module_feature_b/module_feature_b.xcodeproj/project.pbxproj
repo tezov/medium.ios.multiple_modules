@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		002C7EC63DC6D14EC627D9BA /* Pods_module_feature_b.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8754E5C7F6EAEBB2E3702AB2 /* Pods_module_feature_b.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		0B34449396A6E31014EB5C51 /* Pods_module_feature_b.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57C61F37E269AD3CC4FD97BC /* Pods_module_feature_b.framework */; };
 		C7A799462B0C183B00BF1F70 /* module_root.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7A799452B0C183B00BF1F70 /* module_root.framework */; };
-		C7A7994A2B0C186200BF1F70 /* dummy_from_feature_b.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A799492B0C186200BF1F70 /* dummy_from_feature_b.swift */; };
+		C7A7994A2B0C186200BF1F70 /* DummyFromFeatureB.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A799492B0C186200BF1F70 /* DummyFromFeatureB.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4B5C4CF6C03AED6A9D995556 /* Pods-module_feature_b.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-module_feature_b.release.xcconfig"; path = "Target Support Files/Pods-module_feature_b/Pods-module_feature_b.release.xcconfig"; sourceTree = "<group>"; };
-		8754E5C7F6EAEBB2E3702AB2 /* Pods_module_feature_b.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_module_feature_b.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57C61F37E269AD3CC4FD97BC /* Pods_module_feature_b.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_module_feature_b.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE04C75E1932C1D692C0E560 /* Pods-module_feature_b.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-module_feature_b.debug.xcconfig"; path = "Target Support Files/Pods-module_feature_b/Pods-module_feature_b.debug.xcconfig"; sourceTree = "<group>"; };
 		C7A7993A2B0C17F300BF1F70 /* module_feature_b.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = module_feature_b.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7A799452B0C183B00BF1F70 /* module_root.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = module_root.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7A799492B0C186200BF1F70 /* dummy_from_feature_b.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dummy_from_feature_b.swift; sourceTree = "<group>"; };
+		C7A799492B0C186200BF1F70 /* DummyFromFeatureB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyFromFeatureB.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,7 +27,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7A799462B0C183B00BF1F70 /* module_root.framework in Frameworks */,
-				002C7EC63DC6D14EC627D9BA /* Pods_module_feature_b.framework in Frameworks */,
+				0B34449396A6E31014EB5C51 /* Pods_module_feature_b.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,7 +38,7 @@
 			isa = PBXGroup;
 			children = (
 				C7A799452B0C183B00BF1F70 /* module_root.framework */,
-				8754E5C7F6EAEBB2E3702AB2 /* Pods_module_feature_b.framework */,
+				57C61F37E269AD3CC4FD97BC /* Pods_module_feature_b.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -74,7 +74,7 @@
 		C7A7993C2B0C17F300BF1F70 /* module_feature_b */ = {
 			isa = PBXGroup;
 			children = (
-				C7A799492B0C186200BF1F70 /* dummy_from_feature_b.swift */,
+				C7A799492B0C186200BF1F70 /* DummyFromFeatureB.swift */,
 			);
 			path = module_feature_b;
 			sourceTree = "<group>";
@@ -184,7 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7A7994A2B0C186200BF1F70 /* dummy_from_feature_b.swift in Sources */,
+				C7A7994A2B0C186200BF1F70 /* DummyFromFeatureB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,7 +229,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -244,7 +244,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -295,7 +295,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -304,7 +304,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
